@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/calculadora-renacyt-ts/static/css/main.ababef68.css",
-    "main.js": "/calculadora-renacyt-ts/static/js/main.a135ff0e.js",
+    "main.js": "/calculadora-renacyt-ts/static/js/main.750d46c4.js",
     "index.html": "/calculadora-renacyt-ts/index.html",
     "main.ababef68.css.map": "/calculadora-renacyt-ts/static/css/main.ababef68.css.map",
-    "main.a135ff0e.js.map": "/calculadora-renacyt-ts/static/js/main.a135ff0e.js.map"
+    "main.750d46c4.js.map": "/calculadora-renacyt-ts/static/js/main.750d46c4.js.map"
   },
   "entrypoints": [
     "static/css/main.ababef68.css",
-    "static/js/main.a135ff0e.js"
+    "static/js/main.750d46c4.js"
   ]
 }
