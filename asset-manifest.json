@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/calculadora-renacyt-ts/static/css/main.ababef68.css",
-    "main.js": "/calculadora-renacyt-ts/static/js/main.750d46c4.js",
+    "main.css": "/calculadora-renacyt-ts/static/css/main.7cbf120a.css",
+    "main.js": "/calculadora-renacyt-ts/static/js/main.58f980bb.js",
+    "static/media/bootstrap-icons.woff?": "/calculadora-renacyt-ts/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/calculadora-renacyt-ts/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "index.html": "/calculadora-renacyt-ts/index.html",
-    "main.ababef68.css.map": "/calculadora-renacyt-ts/static/css/main.ababef68.css.map",
-    "main.750d46c4.js.map": "/calculadora-renacyt-ts/static/js/main.750d46c4.js.map"
+    "main.7cbf120a.css.map": "/calculadora-renacyt-ts/static/css/main.7cbf120a.css.map",
+    "main.58f980bb.js.map": "/calculadora-renacyt-ts/static/js/main.58f980bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ababef68.css",
-    "static/js/main.750d46c4.js"
+    "static/css/main.7cbf120a.css",
+    "static/js/main.58f980bb.js"
   ]
 }
