@@ -2,15 +2,17 @@ import React from "react"
 
 interface AccordionItemProps {
     id: string;
-    heading: string;
-    body: string;
+    heading: React.ReactNode;
+    body: React.ReactNode;
+    parentId: string;
 }
 
 export interface AccordionProps {
-    items: { id: string; heading: string; body: string }[];
+    id: string;
+    items: AccordionItemProps[];
 }
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body }) => {
+const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body , parentId}) => {
     const headerId:string = "header-" + id
     const collapseId:string = "collapse-" + id
   return (
@@ -23,10 +25,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body }) => {
             data-bs-target={`#${collapseId}`} 
             aria-expanded="false" 
             aria-controls={collapseId}>
-            {heading}
+            <h5>{heading}</h5>
           </button>
         </h2>
-        <div id={collapseId} className="accordion-collapse collapse" aria-labelledby={headerId} data-bs-parent="#accordionExample">
+        <div 
+            id={collapseId} 
+            className="accordion-collapse collapse" 
+            aria-labelledby={headerId} 
+            data-bs-parent={`#${parentId}`}>
           <div className="accordion-body">
             {body}
           </div>
@@ -36,11 +42,17 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body }) => {
 }
 
 
-export const Accordion: React.FC<AccordionProps> = ({ items }) => {
+export const Accordion: React.FC<AccordionProps> = ({ id,  items }) => {
     return (
-        <div className="accordion" id="accordionExample">
+        <div className="accordion" id={id}>
       {items.map((item, index) => (
-          <AccordionItem key={index} id={item.id} heading={item.heading} body={item.body} />
+          <AccordionItem 
+            key={index} 
+            id={item.id} 
+            heading={item.heading} 
+            body={item.body} 
+            parentId={id}
+            />
           ))}
     </div>
   )

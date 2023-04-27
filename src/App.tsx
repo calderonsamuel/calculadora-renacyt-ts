@@ -7,9 +7,9 @@ import Inputs from './inputs/Inputs';
 function App() {
   return (
     <div className="container-fluid">
-      <div className='row gx-3'>
-        <div className='col-4 bg-secondary'>
-          <h1>Calculadora RENACYT</h1>
+      <div className='row'>
+        <div className='col-4 p-3 rounded bg-light bg-secondary'>
+          <h1 className='pb-3'>Calculadora RENACYT</h1>
           <Inputs />
         </div>
         <div className='col-8 bg-primary'>
