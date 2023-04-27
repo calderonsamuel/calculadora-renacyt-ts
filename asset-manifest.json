@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/github.io/calculadora-renacyt-ts/static/css/main.073c9b0a.css",
-    "main.js": "/github.io/calculadora-renacyt-ts/static/js/main.39b08731.js",
-    "static/js/787.0d4ba336.chunk.js": "/github.io/calculadora-renacyt-ts/static/js/787.0d4ba336.chunk.js",
-    "static/media/logo.svg": "/github.io/calculadora-renacyt-ts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/github.io/calculadora-renacyt-ts/index.html",
-    "main.073c9b0a.css.map": "/github.io/calculadora-renacyt-ts/static/css/main.073c9b0a.css.map",
-    "main.39b08731.js.map": "/github.io/calculadora-renacyt-ts/static/js/main.39b08731.js.map",
-    "787.0d4ba336.chunk.js.map": "/github.io/calculadora-renacyt-ts/static/js/787.0d4ba336.chunk.js.map"
+    "main.css": "/calculadora-renacyt-ts/static/css/main.073c9b0a.css",
+    "main.js": "/calculadora-renacyt-ts/static/js/main.e4915f40.js",
+    "static/js/787.0d4ba336.chunk.js": "/calculadora-renacyt-ts/static/js/787.0d4ba336.chunk.js",
+    "static/media/logo.svg": "/calculadora-renacyt-ts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/calculadora-renacyt-ts/index.html",
+    "main.073c9b0a.css.map": "/calculadora-renacyt-ts/static/css/main.073c9b0a.css.map",
+    "main.e4915f40.js.map": "/calculadora-renacyt-ts/static/js/main.e4915f40.js.map",
+    "787.0d4ba336.chunk.js.map": "/calculadora-renacyt-ts/static/js/787.0d4ba336.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.39b08731.js"
+    "static/js/main.e4915f40.js"
   ]
 }
