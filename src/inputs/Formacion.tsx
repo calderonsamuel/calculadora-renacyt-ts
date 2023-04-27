@@ -1,45 +1,26 @@
-interface Option {
-    value: string;
-    label: string;
-  }
-  
-  interface FormSelectProps {
-    options: Option[];
-    selected?: string;
-  }
-
-  const options = [
-    { value: "delhi", label: "New Delhi" },
-    { value: "istanbul", label: "Istanbul" },
-    { value: "jakarta", label: "Jakarta" },
-  ];
-  
-  
-  function formSelect({ options, selected }: FormSelectProps): JSX.Element {
-    return (
-      <div className="mb-3 px-3">
-        <label htmlFor="select" className="form-label">
-          City
-        </label>
-        <select className="form-select" name="" id="select" defaultValue={selected}>
-          {options.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-      </div>
-    );
-  }
-  
-  
+import {FormSelect} from "../Components/FormSelect";
 
 function Formacion() {
-    return ( 
-        <div>
-            {formSelect({options, selected: "jakarta"})}
-        </div>
-     );
+
+  const options = [
+    { value: "0", label: "Ninguno" },
+    { value: "1", label: "Estudiante matriculado" },
+    { value: "2", label: "Bachiller o egresado" },
+    { value: "4", label: "Título profesional" },
+    { value: "6", label: "Magister" },
+    { value: "10", label: "Doctor" },
+  ];
+
+  return ( 
+      <div>
+        <FormSelect 
+          id="grado" 
+          label="A. Grado académico (registrado en SUNEDU o MINEDU)" 
+          options={options} 
+          selected="0"
+        />
+      </div>
+    );
 }
 
 export default Formacion;
