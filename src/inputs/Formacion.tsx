@@ -5,6 +5,7 @@ interface Option {
   
   interface FormSelectProps {
     options: Option[];
+    selected?: string;
   }
 
   const options = [
@@ -14,13 +15,13 @@ interface Option {
   ];
   
   
-  function formSelect({ options }: FormSelectProps): JSX.Element {
+  function formSelect({ options, selected }: FormSelectProps): JSX.Element {
     return (
       <div className="mb-3 px-3">
         <label htmlFor="select" className="form-label">
           City
         </label>
-        <select className="form-select" name="" id="select">
+        <select className="form-select" name="" id="select" defaultValue={selected}>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
@@ -36,7 +37,7 @@ interface Option {
 function Formacion() {
     return ( 
         <div>
-            {formSelect({options})}
+            {formSelect({options, selected: "jakarta"})}
         </div>
      );
 }

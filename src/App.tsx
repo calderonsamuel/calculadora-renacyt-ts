@@ -4,8 +4,8 @@ import Inputs from './inputs/Inputs';
 
 function App() {
   return (
-    <div className="container">
-      <div className='row'>
+    <div className="container-fluid">
+      <div className='row gx-3'>
         <div className='col-4 bg-secondary'>
           <Inputs />
         </div>
