@@ -7,19 +7,22 @@ function Inputs() {
             id: "formacion", 
             heading: "Formación", 
             body: <Formacion />,
-            parentId: "inputAccordion"
+            parentId: "inputAccordion",
+            iconName: "person-vcard"
         },
         { 
             id: "produccion", 
             heading: "Producción", 
             body: "This is the second item's accordion body.",
-            parentId: "inputAccordion"
+            parentId: "inputAccordion",
+            iconName: "journal-text"
         },
         { 
             id: "asesoria", 
             heading: "Asesoría", 
             body: "This is the third item's accordion body.",
-            parentId: "inputAccordion"
+            parentId: "inputAccordion",
+            iconName: "people"
         }
     ];
 

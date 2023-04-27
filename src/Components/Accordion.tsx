@@ -5,6 +5,7 @@ interface AccordionItemProps {
     heading: React.ReactNode;
     body: React.ReactNode;
     parentId: string;
+    iconName?: string;
 }
 
 export interface AccordionProps {
@@ -12,9 +13,12 @@ export interface AccordionProps {
     items: AccordionItemProps[];
 }
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body , parentId}) => {
+const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body , parentId, iconName}) => {
     const headerId:string = "header-" + id
     const collapseId:string = "collapse-" + id
+
+    const iconClasses:string = iconName ? `bi bi-${iconName} me-2` : "d-none"
+    const icon:React.ReactNode = <i className={iconClasses}/>
   return (
       <div className="accordion-item">
         <h2 className="accordion-header" id={headerId}>
@@ -25,7 +29,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ id, heading, body , paren
             data-bs-target={`#${collapseId}`} 
             aria-expanded="false" 
             aria-controls={collapseId}>
-            <h5>{heading}</h5>
+            <h5>{icon}{heading}</h5>
           </button>
         </h2>
         <div 
@@ -52,6 +56,7 @@ export const Accordion: React.FC<AccordionProps> = ({ id,  items }) => {
             heading={item.heading} 
             body={item.body} 
             parentId={id}
+            iconName={item.iconName}
             />
           ))}
     </div>
