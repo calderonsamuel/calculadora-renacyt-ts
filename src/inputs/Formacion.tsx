@@ -1,6 +1,14 @@
-import {FormSelect} from "../Components/FormSelect";
+import {FormSelect, FormSelectProps} from "../Components/FormSelect";
+import { useState } from "react";
 
 function Formacion() {
+
+  const [gradoAcademico, setGradoAcademico] = useState<string | undefined>('0');
+
+  const handleGradoAcademicoChange = (value: string) => {
+    setGradoAcademico(value);
+  };
+  
 
   const options = [
     { value: "0", label: "Ninguno" },
@@ -17,7 +25,8 @@ function Formacion() {
           id="grado" 
           label="A. Grado académico (registrado en SUNEDU o MINEDU)" 
           options={options} 
-          selected="0"
+          selected={gradoAcademico}
+          onChange={handleGradoAcademicoChange}
         />
       </div>
     );
