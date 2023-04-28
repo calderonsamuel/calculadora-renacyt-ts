@@ -1,5 +1,6 @@
 import Formacion from "./Formacion";
 import Asesoria from "./Asesoria";
+import Produccion from "./Produccion";
 import {Accordion, AccordionProps} from "../Components/Accordion";
 
 function Inputs() {
@@ -14,7 +15,7 @@ function Inputs() {
         { 
             id: "produccion", 
             heading: "Producción", 
-            body: "This is the second item's accordion body.",
+            body: <Produccion />,
             parentId: "inputAccordion",
             iconName: "journal-text"
         },

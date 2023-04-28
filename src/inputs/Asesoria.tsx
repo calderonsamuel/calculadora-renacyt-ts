@@ -9,18 +9,21 @@ function Asesoria() {
                 label="Para obtención del grado de Doctor"
                 defaultValue={0}
                 minValue={0}
-            />
+                inputClass="mb-3"
+                />
             <FormNumber 
                 id="asesoria-magister"
                 label="Para obtención del grado de Magister"
                 defaultValue={0}
                 minValue={0}
-            />
+                inputClass="mb-3"
+                />
             <FormNumber 
                 id="asesoria-titulo"
                 label="Para obtención del grado de Bachiller o Título Profesional"
                 defaultValue={0}
                 minValue={0}
+                inputClass="mb-3"
             />
         </div>
      );

@@ -8,11 +8,12 @@ export interface FormSelectProps {
   label?: string;
   options: Option[];
   selected?: string;
+  inputClass?: string;
 }
 
-export function FormSelect({ id, label, options, selected }: FormSelectProps): JSX.Element {
+export function FormSelect({ id, label, options, selected, inputClass }: FormSelectProps): JSX.Element {
   return (
-    <div className="mb-3 px-3">
+    <div className={inputClass}>
       <label htmlFor={id} className="form-label">
         {label}
       </label>
