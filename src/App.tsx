@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="container-fluid">
       <div className='row'>
-        <div className='col-4 p-3 rounded bg-light bg-secondary'>
+        <div className='col-12 col-lg-4 p-3 rounded bg-light bg-secondary'>
           <h1 className='pb-3'>Calculadora RENACYT</h1>
           <Inputs />
         </div>
-        <div className='col-8 bg-primary'>
+        <div className='col-12 col-lg-8 bg-primary'>
         </div>
       </div>
     </div>
