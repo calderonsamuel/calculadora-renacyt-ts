@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export interface FormTextProps {
+interface FormTextProps {
   id: string;
   label: string;
+  value: string;
   defaultValue?: string;
   maxLength?: number;
   placeholder?: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const FormText: React.FC<FormTextProps> = ({ id, label, defaultValue = '', maxLength = 100, placeholder = '' }) => (
-  <div className="form-floating mb-3">
-    <input type="text" className="form-control" id={id}
-      placeholder={placeholder} defaultValue={defaultValue}
-      maxLength={maxLength} />
-    <label htmlFor={id}>{label}</label>
-  </div>
-);
+const FormText: React.FC<FormTextProps> = ({ 
+  id, 
+  label, 
+  value, 
+  defaultValue = '', 
+  maxLength = 100, 
+  placeholder = '', 
+  onChange 
+}) => {
+  return (
+    <div className="form-floating mb-3">
+      <input 
+        type="text" 
+        className="form-control" 
+        id={id}
+        placeholder={placeholder} 
+        defaultValue={defaultValue}
+        value={value} 
+        maxLength={maxLength} 
+        onChange={onChange} 
+      />
+      <label htmlFor={id}>{label}</label>
+    </div>
+  );
+};
