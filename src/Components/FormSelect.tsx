@@ -31,6 +31,7 @@ export function FormSelect({
     setSelectedValue(value);
     if (onChange) {
       onChange(value);
+      console.log(`${id} changed to: ${value}`)
     }
   };
 
